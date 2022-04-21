@@ -4,3 +4,14 @@ ju., 21 de abr. de 2022 11:29:14:
  tests:  3|8
 total_score: 0/70
 86c4f7b
+ju., 21 de abr. de 2022 11:30:20: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function 'searchTreeMap':
+treemap.c:82:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c21f3d2
