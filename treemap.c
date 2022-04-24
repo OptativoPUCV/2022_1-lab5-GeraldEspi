@@ -148,11 +148,15 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
+
     return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    return NULL;
+    TreeNode* MinNode = minimum(tree->root);
+    Pair* MinKey = MinNode->pair->key;
+    return MinKey; //mickey xd
+
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
