@@ -95,3 +95,9 @@ treemap.c:51:15: error: variable 'new' set but not used [-Werror=unused-but-set-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5fd4d90
+sá., 23 de abr. de 2022 21:29:41: 
+ treemap.c | 5 -----
+ 1 file changed, 5 deletions(-)
+ tests:  11|6
+total_score: 15/70
+8fef91f
