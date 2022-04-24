@@ -153,7 +153,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    TreeNode* MinNode = minimum(tree->root);
+    TreeNode* MinNode = minimum(tree->root->left);
     Pair* MinKey = MinNode->pair->key;
     return MinKey; //mickey xd
 
