@@ -330,3 +330,17 @@ do., 24 de abr. de 2022 17:32:00:
  tests:  18|3
 total_score: 40/70
 98d2841
+do., 24 de abr. de 2022 17:32:31: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'firstTreeMap':
+treemap.c:156:33: error: passing argument 1 of 'minimum' from incompatible pointer type [-Werror=incompatible-pointer-types]
+     TreeNode* MinNode = minimum(tree);
+                                 ^~~~
+treemap.c:73:12: note: expected 'TreeNode * {aka struct TreeNode *}' but argument is of type 'TreeMap * {aka struct TreeMap *}'
+ TreeNode * minimum(TreeNode * x){
+            ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+665dde2
