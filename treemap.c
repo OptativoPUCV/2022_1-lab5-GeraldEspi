@@ -79,7 +79,7 @@ TreeNode * minimum(TreeNode * x){
 
     }
 
-    return NULL;
+    return current;
 }
 
 
