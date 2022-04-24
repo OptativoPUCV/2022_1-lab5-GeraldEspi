@@ -160,5 +160,6 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+    tree->current 
     return NULL;
 }
