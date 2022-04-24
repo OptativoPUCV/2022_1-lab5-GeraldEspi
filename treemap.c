@@ -95,16 +95,24 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
     else if(tree->root->right == NULL) // caso 2
     {
-        node->parent = node->parent->right;
+        TreeNode* son = node->right;
+        node->pair = son->pair;
+        node->right = son->right;
+        node->left = son->left;
 
     }
     else if ( tree->root->left == NULL) 
     {
-        node->parent = node->parent->left;   
+        TreeNode* son = node->left;
+        node->pair = son->pair;
+        node->right = son->right;
+        node->left = son->left;
+  
     }
     else // caso 3 
     {
-        TreeNode* min = minimum(node);
+        TreeNode* current = node->right;
+        TreeNode* min = minimum(current);
         node->pair = min->pair;
         removeNode(tree, min);
     }
