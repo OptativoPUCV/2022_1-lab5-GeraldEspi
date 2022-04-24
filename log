@@ -286,3 +286,8 @@ treemap.c:107:19: error: unused variable 'current' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 f693531
+do., 24 de abr. de 2022 15:58:22: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+0246c02
