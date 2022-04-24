@@ -160,14 +160,14 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    TreeNode* current;
+    TreeNode* current = tree->current;
     if(tree->current->right != NULL)
     {
     current = tree->current->right;
     } else{
         if(tree->current > current)
         {
-        current = tree->current->parent; }
+        current = tree->current->parent;}
         else if (tree->current < current)
         {
           if(tree->current->parent->parent != NULL){
