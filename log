@@ -77,3 +77,21 @@ treemap.c:51:16: error: unused variable 'new' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5309230
+sá., 23 de abr. de 2022 21:29:04: 
+ treemap.c | 16 +++++-----------
+ 1 file changed, 5 insertions(+), 11 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:51:21: error: implicit declaration of function 'createNode' [-Werror=implicit-function-declaration]
+     TreeNode* new = createNode(key, value);
+                     ^~~~~~~~~~
+treemap.c:51:21: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+treemap.c:55:17: error: expected identifier before ')' token
+         if(new->)
+                 ^
+treemap.c:51:15: error: variable 'new' set but not used [-Werror=unused-but-set-variable]
+     TreeNode* new = createNode(key, value);
+               ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5fd4d90
